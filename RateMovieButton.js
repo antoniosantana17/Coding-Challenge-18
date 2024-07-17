@@ -1,4 +1,4 @@
-// RateMovieButton.js
+// src/components/RateMovieButton.js
 import React, { useState } from 'react';
 
 const RateMovieButton = ({ movie }) => {
