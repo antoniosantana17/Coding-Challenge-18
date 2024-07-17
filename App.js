@@ -54,3 +54,27 @@ function App() {
 }
 
 export default App;
+
+import React, { useState } from 'react';
+import Toolbar from './components/Toolbar';
+import RateMovieButton from './components/RateMovieButton';
+import MovieSelector from './components/MovieSelector';
+import UploadButton from './components/UploadButton';
+
+function App() {
+  const [selectedMovie, setSelectedMovie] = useState(null);
+  const movies = ['Movie 1', 'Movie 2', 'Movie 3'];
+
+  return (
+    <div className="App">
+      <Toolbar>
+        <h1>Interactive Media Toolbar</h1>
+        <MovieSelector movies={movies} onSelect={setSelectedMovie} />
+        <RateMovieButton movie={selectedMovie} />
+        <UploadButton />
+      </Toolbar>
+    </div>
+  );
+}
+
+export default App;
