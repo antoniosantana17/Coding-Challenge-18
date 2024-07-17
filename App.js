@@ -1,4 +1,4 @@
-// src/App.js
+// App.js
 import React from 'react';
 import Toolbar from './components/Toolbar';
 
